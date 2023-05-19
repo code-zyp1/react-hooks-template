@@ -1,0 +1,31 @@
+.player-grid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.player-parent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    /* 让每个 player-parent 有 50% 的高度，这样就会有两行 */
+}
+
+.player-cell {
+    width: calc(50% - 2px);
+    /* 2px 是因为你在每个方向上都添加了 1px 的间距 */
+    height: calc(100% - 2px);
+    margin: 1px;
+    background-color: gray;
+}
+
+.liveviewvideo {
+    width: 100%;
+    height: 100%;
+}
+
+.selected {
+    border: 1px solid red;
+}
